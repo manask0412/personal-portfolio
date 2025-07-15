@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Manas Kumar Jena, Machine Learning Developer specializing in AI/ML solutions"
+    />
+    <meta
+      name="keywords"
+      content="machine learning, AI, deep learning, portfolio, data science"
+    />
+    <meta name="author" content="Manas Kumar Jena" />
+    <meta
+      property="og:title"
+      content="ML Developer Portfolio - Manas Kumar Jena"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio of Manas Kumar Jena, Machine Learning Developer"
+    />
+    <meta property="og:type" content="website" />
+    <title>ML Developer Portfolio | Manas Kumar Jena</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      /* Custom CSS for animations and effects */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .fade-in {
+        animation: fadeIn 1s ease-out forwards;
+      }
+
+      .gradient-text {
+        background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+
+      .project-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+
+      .skill-bar {
+        transition: width 1.5s ease-in-out;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 font-sans text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex items-center">
+            <span class="text-xl font-bold gradient-text"
+              >Manas Kumar Jena</span
+            >
+          </div>
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="#home" class="text-gray-700 hover:text-blue-600 transition"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >About</a
+            >
+            <a
+              href="#projects"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >Projects</a
+            >
+            <a
+              href="#skills"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >Skills</a
+            >
+            <a
+              href="#contact"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >Contact</a
+            >
+          </div>
+          <div class="md:hidden flex items-center">
+            <button
+              id="menu-btn"
+              class="text-gray-700"
+              aria-label="Toggle menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <i class="fas fa-bars text-xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white py-2 px-4 shadow-lg"
+      >
+        <a
+          href="#home"
+          class="block py-2 text-gray-700 hover:text-blue-600 transition"
+          >Home</a
+        >
+        <a
+          href="#about"
+          class="block py-2 text-gray-700 hover:text-blue-600 transition"
+          >About</a
+        >
+        <a
+          href="#projects"
+          class="block py-2 text-gray-700 hover:text-blue-600 transition"
+          >Projects</a
+        >
+        <a
+          href="#skills"
+          class="block py-2 text-gray-700 hover:text-blue-600 transition"
+          >Skills</a
+        >
+        <a
+          href="#contact"
+          class="block py-2 text-gray-700 hover:text-blue-600 transition"
+          >Contact</a
+        >
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-50 to-purple-50"
+    >
+      <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-10 md:mb-0 fade-in">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">
+              Hi, I'm <span class="gradient-text">Manas Kumar Jena</span>
+            </h1>
+            <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-gray-600">
+              Machine Learning Developer
+            </h2>
+            <p class="text-lg text-gray-600 mb-8">
+              Building intelligent systems that learn from data to solve complex
+              problems.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#projects"
+                class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition shadow-md"
+                >View My Work</a
+              >
+              <a
+                href="#contact"
+                class="px-6 py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition"
+                >Contact Me</a
+              >
+            </div>
+          </div>
+          <div class="md:w-1/2 flex justify-center fade-in">
+            <div
+              class="relative w-64 h-64 md:w-80 md:h-80 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center shadow-xl"
+            >
+              <div
+                class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')] bg-cover bg-center rounded-full opacity-20"
+              ></div>
+              <i class="fas fa-brain text-white text-8xl md:text-9xl"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-12 fade-in">
+          About <span class="gradient-text">Me</span>
+        </h2>
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center fade-in">
+            <div class="w-64 h-64 rounded-lg overflow-hidden shadow-lg">
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                alt="Profile"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="md:w-2/3 md:pl-12 fade-in">
+            <h3 class="text-2xl font-semibold mb-4">Who am I?</h3>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              I'm a passionate AI/ML student currently in my final year of
+              B.Tech in Computer Science Engineering with specialization in
+              Artificial Intelligence and Machine Learning. My academic journey
+              has equipped me with strong foundations in machine learning
+              algorithms, deep learning, and data science. I'm eager to apply my
+              knowledge to real-world problems and continuously expand my skills
+              in this exciting field.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+              <div class="flex items-center">
+                <div class="mr-4 text-blue-600">
+                  <i class="fas fa-graduation-cap text-2xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Education</h4>
+                  <p class="text-gray-600">
+                    B.Tech in Computer Science Engineering
+                  </p>
+                  <p class="text-gray-600">
+                    Trident Academy of Technology, Bhubaneswar
+                  </p>
+                  <p class="text-gray-600">
+                    Specialization: AI & ML (Final Year)
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <div class="mr-4 text-purple-600">
+                  <i class="fas fa-briefcase text-2xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Experience</h4>
+                  <p class="text-gray-600">AI/ML Student</p>
+                  <p class="text-gray-600">Seeking Opportunities</p>
+                </div>
+              </div>
+            </div>
+            <a
+              href="https://huggingface.co/spaces/manas0412/portfolio/resolve/main/resume.pdf?download=true"
+              class="inline-flex items-center text-blue-600 hover:text-blue-800 transition"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Download Resume</span>
+              <i class="fas fa-download ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-4 fade-in">
+          My <span class="gradient-text">Projects</span>
+        </h2>
+        <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto fade-in">
+          Here are some of my recent machine learning projects that showcase my
+          skills and expertise.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project 1 -->
+          <div
+            class="bg-white rounded-xl overflow-hidden shadow-md project-card transition duration-300 fade-in"
+          >
+            <div
+              class="h-48 bg-gradient-to-r from-blue-500 to-blue-700 flex items-center justify-center"
+            >
+              <i class="fas fa-eye text-white text-6xl"></i>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Deepfake Detection</h3>
+              <p class="text-gray-600 mb-4">
+                Classification Model for detecting Real vs Fake Images.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
+                  >Computer Vision</span
+                >
+                <span
+                  class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm"
+                  >EfficientNetB0</span
+                >
+                <span
+                  class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm"
+                  >TensorFlow</span
+                >
+              </div>
+              <a
+                href="https://huggingface.co/spaces/manas0412/deepfake-detection"
+                class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Live Demo <i class="fas fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div
+            class="bg-white rounded-xl overflow-hidden shadow-md project-card transition duration-300 fade-in"
+            style="animation-delay: 0.2s"
+          >
+            <div
+              class="h-48 bg-gradient-to-r from-purple-500 to-pink-600 flex items-center justify-center"
+            >
+              <i class="fas fa-comment-alt text-white text-6xl"></i>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">SMS Spam Classifier</h3>
+              <p class="text-gray-600 mb-4">
+                SVM classifier using Universal Sentence Encoder to detect spam
+                messages.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
+                  >SVM</span
+                >
+                <span
+                  class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm"
+                  >NLP</span
+                >
+                <span
+                  class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm"
+                  >TensorFlow</span
+                >
+              </div>
+              <a
+                href="https://huggingface.co/spaces/manas0412/sms-spam-classifier-app"
+                class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Live Demo <i class="fas fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div
+            class="bg-white rounded-xl overflow-hidden shadow-md project-card transition duration-300 fade-in"
+            style="animation-delay: 0.4s"
+          >
+            <div
+              class="h-48 bg-gradient-to-r from-green-500 to-teal-600 flex items-center justify-center"
+            >
+              <i class="fas fa-chart-line text-white text-6xl"></i>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Stock Prediction System</h3>
+              <p class="text-gray-600 mb-4">
+                LSTM-based model for predicting stock prices with 87%
+                directional accuracy.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
+                  >LSTM</span
+                >
+                <span
+                  class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm"
+                  >PyTorch</span
+                >
+                <span
+                  class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm"
+                  >Time Series</span
+                >
+              </div>
+              <a
+                href="#"
+                class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center"
+              >
+                View Details <i class="fas fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-12 fade-in">
+          <a
+            href="https://huggingface.co/manas0412"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition shadow-md inline-flex items-center"
+          >
+            <span>View All Projects</span>
+            <i class="fas fa-chevron-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-4 fade-in">
+          My <span class="gradient-text">Skills</span>
+        </h2>
+        <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto fade-in">
+          I've worked with a variety of technologies in the machine learning and
+          data science space.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <!-- Technical Skills -->
+          <div class="fade-in">
+            <h3 class="text-xl font-semibold mb-6 flex items-center">
+              <i class="fas fa-code mr-3 text-blue-600"></i> Technical Skills
+            </h3>
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="font-medium">Python</span>
+                  <span class="text-gray-600">95%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                  <div
+                    class="skill-bar bg-blue-600 h-2.5 rounded-full"
+                    style="width: 95%"
+                  ></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="font-medium">TensorFlow/PyTorch</span>
+                  <span class="text-gray-600">90%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                  <div
+                    class="skill-bar bg-purple-600 h-2.5 rounded-full"
+                    style="width: 90%"
+                  ></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="font-medium">Data Analysis</span>
+                  <span class="text-gray-600">88%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                  <div
+                    class="skill-bar bg-green-600 h-2.5 rounded-full"
+                    style="width: 88%"
+                  ></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="font-medium">SQL/NoSQL</span>
+                  <span class="text-gray-600">85%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                  <div
+                    class="skill-bar bg-yellow-600 h-2.5 rounded-full"
+                    style="width: 85%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ML Specializations -->
+          <div class="fade-in" style="animation-delay: 0.2s">
+            <h3 class="text-xl font-semibold mb-6 flex items-center">
+              <i class="fas fa-brain mr-3 text-purple-600"></i> ML
+              Specializations
+            </h3>
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="font-medium">Deep Learning</span>
+                  <span class="text-gray-600">93%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                  <div
+                    class="skill-bar bg-blue-600 h-2.5 rounded-full"
+                    style="width: 93%"
+                  ></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="font-medium">Natural Language Processing</span>
+                  <span class="text-gray-600">90%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                  <div
+                    class="skill-bar bg-purple-600 h-2.5 rounded-full"
+                    style="width: 90%"
+                  ></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="font-medium">Computer Vision</span>
+                  <span class="text-gray-600">87%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                  <div
+                    class="skill-bar bg-green-600 h-2.5 rounded-full"
+                    style="width: 87%"
+                  ></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="font-medium">Reinforcement Learning</span>
+                  <span class="text-gray-600">80%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                  <div
+                    class="skill-bar bg-yellow-600 h-2.5 rounded-full"
+                    style="width: 80%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools & Technologies -->
+        <div class="fade-in" style="animation-delay: 0.4s">
+          <h3 class="text-xl font-semibold mb-6 flex items-center">
+            <i class="fas fa-tools mr-3 text-green-600"></i> Tools &
+            Technologies
+          </h3>
+          <div class="flex flex-wrap gap-4">
+            <div class="flex items-center px-4 py-2 bg-gray-100 rounded-lg">
+              <i class="fab fa-python text-blue-600 mr-2 text-xl"></i>
+              <span>Python</span>
+            </div>
+            <div class="flex items-center px-4 py-2 bg-gray-100 rounded-lg">
+              <i class="fas fa-database text-purple-600 mr-2 text-xl"></i>
+              <span>TensorFlow</span>
+            </div>
+            <div class="flex items-center px-4 py-2 bg-gray-100 rounded-lg">
+              <i class="fas fa-fire text-orange-600 mr-2 text-xl"></i>
+              <span>PyTorch</span>
+            </div>
+            <div class="flex items-center px-4 py-2 bg-gray-100 rounded-lg">
+              <i class="fab fa-r-project text-blue-400 mr-2 text-xl"></i>
+              <span>R</span>
+            </div>
+            <div class="flex items-center px-4 py-2 bg-gray-100 rounded-lg">
+              <i class="fab fa-aws text-yellow-600 mr-2 text-xl"></i>
+              <span>AWS SageMaker</span>
+            </div>
+            <div class="flex items-center px-4 py-2 bg-gray-100 rounded-lg">
+              <i class="fas fa-cloud text-blue-300 mr-2 text-xl"></i>
+              <span>Google Cloud AI</span>
+            </div>
+            <div class="flex items-center px-4 py-2 bg-gray-100 rounded-lg">
+              <i class="fas fa-chart-bar text-green-500 mr-2 text-xl"></i>
+              <span>Tableau</span>
+            </div>
+            <div class="flex items-center px-4 py-2 bg-gray-100 rounded-lg">
+              <i class="fab fa-git-alt text-orange-600 mr-2 text-xl"></i>
+              <span>Git</span>
+            </div>
+            <div class="flex items-center px-4 py-2 bg-gray-100 rounded-lg">
+              <i class="fab fa-github text-gray-800 mr-2 text-xl"></i>
+              <span>GitHub</span>
+            </div>
+            <div class="flex items-center px-4 py-2 bg-gray-100 rounded-lg">
+              <i class="fab fa-aws text-orange-600 mr-2 text-xl"></i>
+              <span>AWS EC2</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-4 fade-in">
+          Get In <span class="gradient-text">Touch</span>
+        </h2>
+        <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto fade-in">
+          Have a project in mind or want to discuss potential opportunities?
+          Feel free to reach out!
+        </p>
+
+        <div class="flex flex-col md:flex-row gap-12">
+          <div class="md:w-1/2 fade-in">
+            <form
+              id="contactForm"
+              class="space-y-6"
+              method="POST"
+              action="https://formspree.io/f/xjkovbjl"
+            >
+              <div>
+                <label
+                  for="name"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
+                />
+              </div>
+              <div>
+                <label
+                  for="email"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
+                />
+              </div>
+              <div>
+                <label
+                  for="subject"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Subject</label
+                >
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  required
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
+                />
+              </div>
+              <div>
+                <label
+                  for="message"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
+                ></textarea>
+              </div>
+              <div id="formStatus" class="hidden"></div>
+              <button
+                type="submit"
+                class="w-full px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition shadow-md"
+              >
+                <span id="submitText">Send Message</span>
+                <span id="spinner" class="hidden ml-2">
+                  <i class="fas fa-spinner fa-spin"></i>
+                </span>
+              </button>
+            </form>
+          </div>
+
+          <div class="md:w-1/2 fade-in" style="animation-delay: 0.2s">
+            <div class="bg-white p-8 rounded-xl shadow-md h-full">
+              <h3 class="text-xl font-semibold mb-6">Contact Information</h3>
+              <div class="space-y-6">
+                <div class="flex items-start">
+                  <div class="mr-4 mt-1 text-blue-600">
+                    <i class="fas fa-envelope text-xl"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-medium text-gray-800">Email</h4>
+                    <a
+                      href="mailto:manaskumar.jena0412@gmail.com"
+                      class="text-gray-600 hover:text-blue-600"
+                      >manaskumar.jena0412@gmail.com</a
+                    >
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="mr-4 mt-1 text-purple-600">
+                    <i class="fas fa-phone-alt text-xl"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-medium text-gray-800">Phone</h4>
+                    <a
+                      href="tel:+919861307722"
+                      class="text-gray-600 hover:text-blue-600"
+                      >+91 98613 07722</a
+                    >
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="mr-4 mt-1 text-green-600">
+                    <i class="fas fa-map-marker-alt text-xl"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-medium text-gray-800">Location</h4>
+                    <p class="text-gray-600">Bhubaneswar, Odisha</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-10">
+                <h4 class="font-medium text-gray-800 mb-4">Connect with me</h4>
+                <div class="flex space-x-4">
+                  <a
+                    href="https://www.linkedin.com/in/manas-kumar-jena"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="w-10 h-10 flex items-center justify-center bg-blue-100 text-blue-600 rounded-full hover:bg-blue-200 transition"
+                  >
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a
+                    href="https://github.com/manask0412"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="w-10 h-10 flex items-center justify-center bg-gray-100 text-gray-600 rounded-full hover:bg-gray-200 transition"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://wa.me/+919861307722"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="w-10 h-10 flex items-center justify-center bg-green-100 text-green-600 rounded-full hover:bg-green-200 transition"
+                  >
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-4 sm:px-6 lg:px-8 bg-gray-900 text-white">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-4 md:mb-0">
+            <span class="text-xl font-bold gradient-text"
+              >Manas Kumar Jena</span
+            >
+          </div>
+          <div class="text-center md:text-right">
+            <p class="text-gray-400">
+              © 2025 Manas Kumar Jena. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", function () {
+        const isExpanded = this.getAttribute("aria-expanded") === "true";
+        this.setAttribute("aria-expanded", !isExpanded);
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+
+          // Close mobile menu if open
+          document.getElementById("mobile-menu").classList.add("hidden");
+        });
+      });
+
+      // Animate skill bars when they come into view
+      const animateSkillBars = () => {
+        const skillBars = document.querySelectorAll(".skill-bar");
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const width = entry.target.style.width;
+                entry.target.style.width = "0";
+                setTimeout(() => {
+                  entry.target.style.width = width;
+                }, 100);
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.5 }
+        );
+
+        skillBars.forEach((bar) => observer.observe(bar));
+      };
+
+      // Initialize animations when page loads
+      window.addEventListener("load", () => {
+        // Add fade-in class to elements with animation delay
+        const elements = document.querySelectorAll(".fade-in");
+        elements.forEach((el, index) => {
+          const delay = el.style.animationDelay || "0s";
+          el.style.opacity = "0";
+          setTimeout(() => {
+            el.classList.add("fade-in");
+          }, parseFloat(delay) * 1000);
+        });
+
+        // Animate skill bars
+        animateSkillBars();
+      });
+    </script>
+    <script>
+      // Form submission handler
+      const contactForm = document.getElementById("contactForm");
+      const formStatus = document.getElementById("formStatus");
+      const submitText = document.getElementById("submitText");
+      const spinner = document.getElementById("spinner");
+
+      // Form validation
+      function validateForm() {
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const message = document.getElementById("message").value.trim();
+
+        if (!name || !email || !message) {
+          formStatus.textContent =
+            "Please fill in all required fields correctly.";
+          formStatus.classList.remove("hidden", "text-green-500");
+          formStatus.classList.add("text-red-500");
+          return false;
+        }
+
+        if (!/^\S+@\S+\.\S+$/.test(email)) {
+          formStatus.textContent =
+            "Please enter a valid email address (e.g., yourname@example.com).";
+          formStatus.classList.remove("hidden", "text-green-500");
+          formStatus.classList.add("text-red-500");
+          return false;
+        }
+
+        return true;
+      }
+
+      contactForm.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        if (!validateForm()) {
+          formStatus.scrollIntoView({ behavior: "smooth", block: "center" });
+          setTimeout(() => {
+            formStatus.classList.add("hidden");
+          }, 5000);
+          return;
+        }
+
+        // Show loading state
+        submitText.textContent = "Sending...";
+        spinner.classList.remove("hidden");
+        formStatus.classList.add("hidden");
+
+        try {
+          const formData = new FormData(contactForm);
+          const response = await fetch(contactForm.action, {
+            method: "POST",
+            body: formData,
+            headers: {
+              Accept: "application/json",
+            },
+          });
+
+          const result = await response.json();
+
+          if (response.ok) {
+            formStatus.textContent =
+              "Message sent successfully! I will get back to you soon.";
+            formStatus.classList.remove("hidden", "text-red-500");
+            formStatus.classList.add("text-green-500");
+            contactForm.reset();
+          } else {
+            throw new Error(result.error || "Form submission failed");
+          }
+        } catch (error) {
+          console.error("Form submission error:", error);
+          formStatus.textContent =
+            "Oops! There was a problem sending your message. Please try again later or contact me directly at manaskumar.jena0412@gmail.com";
+          formStatus.classList.remove("hidden", "text-green-500");
+          formStatus.classList.add("text-red-500");
+        } finally {
+          submitText.textContent = "Send Message";
+          spinner.classList.add("hidden");
+          // Scroll to form status message
+          formStatus.scrollIntoView({ behavior: "smooth", block: "center" });
+          setTimeout(() => {
+            formStatus.classList.add("hidden");
+          }, 8000);
+        }
+      });
+    </script>
+    <noscript>
+      <div
+        class="fixed inset-0 bg-white z-50 flex items-center justify-center p-4"
+      >
+        <div class="text-center">
+          <h2 class="text-2xl font-bold mb-4">JavaScript is disabled</h2>
+          <p class="mb-4">
+            This portfolio requires JavaScript to function properly. Please
+            enable JavaScript in your browser settings.
+          </p>
+          <p>
+            You can still contact me directly at
+            <a href="mailto:manaskumar.jena0412@gmail.com" class="text-blue-600"
+              >manaskumar.jena0412@gmail.com</a
+            >
+          </p>
+        </div>
+      </div>
+    </noscript>
+  </body>
+</html>
